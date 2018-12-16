@@ -33,6 +33,15 @@ void addFirstElement(node *&first,int v)//by the refference because first pointe
     first=p;
     p->v=v;
 }
+node *addFirstElement1(node *first, int v) //the same but without refference
+{
+    node *p = new node;
+    p->next=first;
+    first=p;
+    p->v=v;
+    return first;
+}
+
 void addLastElement(node *first, int v)
 {
     node *p=new node;
@@ -121,7 +130,7 @@ int main()
     {
         cout<<"[0] - exit program\n[1] - print list\n[2] - add new element at the beginning of list"<<endl;
         cout<<"[3] - add new element at the end of list\n[4] - find element\n[5] - delete first element"<<endl;
-        cout<<"[6] - delete last element\n[7] - delete all elements with a given value\n[8] - check size of list"<<endl;
+        cout<<"[6] - delete last element\n[7] - delete all elements with a given value\n[8] - check size of list\n[9] - add new element at the beginning of list\n"<<endl;
         cin>>choose;
         switch(choose)
         {
@@ -187,6 +196,9 @@ int main()
             default:
                 cout<<"Wrong input!\n";
                 break;
+        case 9:
+            cin>>v;
+            first=addFirstElement1(first,v);
         }
     }
 
