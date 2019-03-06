@@ -7,20 +7,22 @@ numer prawego syna = 2k + 2
 
 numer ojca = [(k - 1) / 2], dla k > 0
 
-lewy syn istnieje, jeúli 2k + 1 < n
+lewy syn istnieje, je≈õli 2k + 1 < n
 
-prawy syn istnieje, jeúli 2k + 2 < n
+prawy syn istnieje, je≈õli 2k + 2 < n
 
-wÍze≥ k jest liúciem, jeúli 2k + 2 > n
+wƒôze≈Ç k jest li≈õciem, je≈õli 2k + 2 > n
 
 zasada dzialania:
 dwa kopce - max i min
 
-jeúli nowy element x mniejszy od korzenia maxa - wstawiam do maxa
+je≈õli nowy element x mniejszy od korzenia maxa - wstawiam do maxa
 w przeciwnym wstawiam do mina
-jeúli po wstawieniu d≥ugoúÊMax - d≥ugoúÊMin>1 usuwamy z Maxa korzeÒ i wrzucamy go do Mina
-jeúli po wstawieniu d≥ugoúÊMin-d≥ugoúÊMin>0 usuwamy z Min korzeÒ i wrzucamy do Maxa
-mediana to w przypadku parzystej liczby úrednia z korzeni, w przypadku nieparzystej korzeÒ maxa
+je≈õli po wstawieniu d≈Çugo≈õƒáMax - d≈Çugo≈õƒáMin>1 usuwamy z Maxa korze≈Ñ i wrzucamy go do Mina
+je≈õli po wstawieniu d≈Çugo≈õƒáMin-d≈Çugo≈õƒáMin>0 usuwamy z Min korze≈Ñ i wrzucamy do Maxa
+mediana to w przypadku parzystej liczby ≈õrednia z korzeni, w przypadku nieparzystej korze≈Ñ maxa
+zlozonosc inserta O(logn), mediany O(1). 
+≈πr√≥d≈Ço: https://stackoverflow.com/questions/11361320/data-structure-to-find-median/11385422#11385422
 */
 #include<iostream>
 #include <cstdlib>
